@@ -7,10 +7,10 @@
         <div></div>
       </div>
       <div class="nav">
-        <a href>我的</a>
-        <a href>发现</a>
-        <a href>云村</a>
-        <a href>视频</a>
+        <router-link to="/owner">我的</router-link>
+        <router-link to="/discover">发现</router-link>
+        <router-link to="/cloudcun">云村</router-link>
+        <router-link to="video">视频</router-link>
       </div>
       <div class="search iconfont icon-sousuo"></div>
     </div>
@@ -29,8 +29,15 @@ export default {
 </script>
 
 <style scoped>
+    #myHeader{
+      background:#161719 ;
+    }
+    .banxin{
+      margin: 0 5px;
+    }
     a{
       text-decoration: none;
+      color: #808183;
     }
     header > div {
     height: 46px;
@@ -43,6 +50,8 @@ export default {
     flex-basis: 68px;
     /* width: 68px; */
     line-height: 46px;
+    text-align: center;
+    color: #808183;
     }
     header .nav {
     flex-grow: 1;
