@@ -1,13 +1,19 @@
 <template>
-  <div>视频</div>
+    <div>
+        <videolist></videolist>
+        <router-view></router-view>
+    </div>
 </template>
 
 <script>
+import videolist from '@/components/videolist.vue'
 export default {
-
+    components:{
+        videolist
+    }
 }
 </script>
 
-<style>
+<style scoped>
 
 </style>
