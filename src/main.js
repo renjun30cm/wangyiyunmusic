@@ -2,19 +2,12 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
-import axios from 'axios'
-Vue.prototype.axios=axios
+import '../src/assets/iconfont/iconfont.css'
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
 Vue.config.productionTip = false
-//vant--ui
-import { Popup } from 'vant';
-import { Tab, Tabs } from 'vant';
 
-Vue.use(Tab);
-Vue.use(Tabs);
-Vue.use(Popup);
-//模拟数据
-require("./mock/index.js")
-
+Vue.use(ElementUI)
 new Vue({
   router,
   store,
